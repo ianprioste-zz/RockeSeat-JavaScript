@@ -1,94 +1,25 @@
-<!DOCTYPE html>
-<html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso Javascript</title>
-</head>
-<body>
-    
-    
-    
-    <script>
-
-        // VARIÁVEIS //
-            // var nome = 'Ian';
-            // var idade = 27;
-            // var peso = 79.5;
-            // var humano = true;
-            // var alunos = ['Ian', 'Diego', 'Gabriel'];
-            // var aluno = {
-            //  nome: 'Ian',
-            //  idade: 27,
-            //  peso: 79.5,
-            //  humano: true
-            // };
-
-            // console.log(alunos[1]);
-            // console.log(aluno.peso) #}
-
-        // Operações Matemáticas //
-            // var x = 10, y = 5;    
-            // console.log(x,5)    
-            // var resultado = x+y;
-            // console.log(resultado)
-            // x = x+3;
-            // console.log(x)
-            // x += 3;
-            // console.log(x)
-
-        // FUNÇÕES //
-            //function soma (numero1, numero2){
-            //    var resultado = numero1 + numero2;
-            //    return resultado;
-            //}
-            //var resultado = soma(1,2);
-            //console.log(resultado);
-
-        // CONDICIONAIS //
-            //IF ELSE //
-            // function retornaSexo(sexo){
-            //    if (sexo === 'M'){
-            //        return 'Masculino';
-            //    } else if (sexo === 'F') {
-            //        return 'Feminino';
-            //    } else {
-            //        return 'Outro';
-            //    }
-            //}
-
-            //var resultado = retornaSexo('F');  
-            //console.log(resultado);
-    
-            // Switch //
-            //    function retornaSexo(sexo){
-            //        switch(sexo){
-            //            case 'M':
-            //                return 'Masculino';
-            //            case 'F':
-            //                return 'Feminino';
-            //            default:
-            //                return 'Outro';
-            //        }
-            //    }
-            //    var resultado = retornaSexo('T');  
-            //    console.log(resultado);
-
-
-            // INTERVALO E TIMEOUT //
-
-            function exibeAlgo(){
-                console.log('Hello World');
-            }
-            // Executa a função a cada 1segundo
-            setInterval(exibeAlgo, 1000);
-
-            // Aguarda 5s para executar a função
-            setTimeout(exibeAlgo, 5000);
-
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <button id="botao" onclick=criarQuadrado()>Clique aqui</button>
+            <div class="box"></div>
+        </div>
+        <script>
             
+            var botao = document.querySelector('#botao')
 
+            botao.onclick = function criarQuadrado(){
+                var element = document.querySelector('.box');
+                element.style.width = 100;
+                element.style.height = 100;
+                element.stye.backgroundColor = '#f00'
+                
+            }
 
-    </script>
-</body>
+        </script>
+    </body>
 </html>
+
